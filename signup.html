@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Sign Up</h2>
+            <div class="signup-toggle">
+                <button type="button" class="toggle-btn active" onclick="toggleSignup('email')">Email</button>
+                <button type="button" class="toggle-btn" onclick="toggleSignup('mobile')">Mobile</button>
+            </div>
+            <form onsubmit="return signup(event)">
+                <div class="input-group">
+                    <input type="text" id="fullname" required placeholder="Full Name">
+                </div>
+                <div id="emailSection" class="input-group">
+                    <input type="email" id="email" placeholder="Email Address">
+                </div>
+                <div id="mobileSection" class="input-group" style="display: none;">
+                    <input type="tel" id="mobile" placeholder="Mobile Number">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required placeholder="Password">
+                </div>
+                <button type="submit" class="login-btn">Sign Up</button>
+            </form>
+            <div class="form-footer">
+                Already have an account? <a href="login.html">Login</a>
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html> 
