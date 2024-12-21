@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social Media</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MySocial</div>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Profile</a>
+            <a href="#">Messages</a>
+        </div>
+        <button class="login-btn">Login</button>
+    </nav>
+
+    <div class="container">
+        <div class="greeting-buttons">
+            <button onclick="toggleSubButtons('helloButtons')">Hello</button>
+            <button onclick="toggleSubButtons('bonjourButtons')">Bonjour</button>
+        </div>
+        
+        <div id="helloButtons" class="sub-buttons" style="display: none;">
+            <button onclick="clickButton('er')">er</button>
+            <button onclick="clickButton('rt')">rt</button>
+            <button onclick="clickButton('ty')">ty</button>
+            <button onclick="clickButton('yu')">yu</button>
+        </div>
+
+        <div id="bonjourButtons" class="sub-buttons" style="display: none;">
+            <button onclick="clickButton('er')">er</button>
+            <button onclick="clickButton('rt')">rt</button>
+            <button onclick="clickButton('ty')">ty</button>
+            <button onclick="clickButton('yu')">yu</button>
+        </div>
+
+        <div class="post-form">
+            <textarea placeholder="What's on your mind?"></textarea>
+            <button>Post</button>
+        </div>
+
+        <div class="feed">
+            <!-- Posts will be added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
